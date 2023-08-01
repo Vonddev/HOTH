@@ -1,5 +1,5 @@
 <script setup>
-const pdfPath = '/HoTH.pdf';
+const pdfPath = `${process.env.NODE_ENV == 'development' ? '/HoTH.pdf' : '/HOTH/HoTH.pdf'}`;
 </script>
 
 <template>
